@@ -1,4 +1,4 @@
-#Lacuna Malaria Detection Dataset Using CNNs
+# Lacuna Malaria Detection Dataset Using CNNs
 
 ## Overview
 
