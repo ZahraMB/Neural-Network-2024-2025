@@ -1,4 +1,4 @@
-Medical Cost Prediction with Custom Multi-Layer Perceptron (MLP)
+Medical Cost Prediction with Custom Multi-Layer Perceptron (MLP) <br>
 Overview
 This project focuses on building a custom Multi-Layer Perceptron (MLP) model to predict individual medical costs based on personal factors. The dataset includes features such as age, gender, BMI, smoking status, number of dependents, and residential region in the US. The goal is to design, train, and optimize a neural network for this regression task, leveraging data preprocessing, model architecture tuning, and performance evaluation.
 
