@@ -37,7 +37,7 @@ Matplotlib/Seaborn for EDA visualizations<br>
 
 ## Usage
 1.Clone the repository:<br>
-git clone https://github.com/your-username/Neural-Network-2024-2025.git<br>
+git clone https://github.com/ZahraMB/Neural-Network-2024-2025.git<br>
 2.Open and run the Google Colab notebooks provided in the repository for step-by-step implementation.<br>
 
 ## Results
