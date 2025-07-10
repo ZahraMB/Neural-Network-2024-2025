@@ -1,0 +1,51 @@
+# Audio Denoising with Autoencoders
+
+This project explores the design and training of an autoencoder model for denoising audio samples from the Audio MNIST dataset. The main goal is to improve the quality of noisy audio recordings by reconstructing their clean versions using spectrogram-based representations.
+
+## Introduction
+
+### Objective
+
+The objective of this project is to develop an autoencoder that can convert noisy audio files into clean ones. This task enhances the clarity and usability of audio data in downstream applications such as speech recognition and acoustic analysis.
+
+### Dataset Overview
+
+The dataset used is Audio MNIST, which includes:
+
+- 30,000 clean audio samples of spoken digits (0–9) from 60 speakers  
+- 30,000 corresponding noisy audio samples with a Signal-to-Noise Ratio (SNR) of -8 dB  
+- A metadata file (`audioMNIST_meta.txt`) containing speaker information, including gender and age
+
+This dataset provides a suitable clean-noisy pairing structure for supervised audio denoising.
+
+## Model Architecture and Training
+
+An autoencoder model was implemented to operate on spectrograms of the audio data.
+
+- The encoder consists of three convolutional layers with batch normalization
+- The decoder mirrors the encoder using upsampling and convolutional layers
+- ReLU activation is used in intermediate layers, and sigmoid activation in the final output layer
+- The model is trained with the Adam optimizer using a learning rate of 0.0001
+- The loss function is Mean Squared Error (MSE), measuring the distance between clean and reconstructed spectrograms
+
+## Evaluation and Results
+
+The model was evaluated on a test set using SNR improvement as the performance metric.
+
+- Achieved an average SNR improvement of 0.52 dB on the test data
+- Additional analysis was conducted to examine model performance across various speaker attributes and digits
+
+## Speaker Attribute Analysis
+
+The report includes a detailed evaluation of how speaker characteristics influence denoising performance:
+
+- Accent and origin had the most significant effect on SNR improvement
+- Gender and age showed smaller, but still noticeable, impacts
+- Interestingly, native speakers showed slightly lower SNR improvement compared to non-native speakers
+
+These findings suggest that speaker diversity and contextual factors should be considered when developing more robust and adaptive audio denoising systems.
+
+## Report
+
+Full implementation details, analysis, and findings are documented in `Practical Report.pdf`.
+
